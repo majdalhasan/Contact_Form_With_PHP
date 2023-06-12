@@ -1,6 +1,10 @@
 /* Start Form */
 form {
-  max-width: 400px;
-  margin: 50px auto;
+  max-width: 500px !important;
+  margin: 20px auto !important;
+}
+form input,
+form textarea {
+  margin-bottom: 20px !important;
 }
 /* End Form */

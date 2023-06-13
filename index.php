@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <title>Contact Form</title>
 </head>
 
@@ -15,12 +19,12 @@
   <!-- Start Form -->
   <div class="container">
     <h2 class="text-center">Contact Me</h2>
-    <form>
-      <input class="form-control" type="text" name="username" placeholder="Your Name">
-      <input class="form-control" type="email" name="email" placeholder="Your E-Mail">
-      <input class="form-control" type="number" name="mobile" placeholder="Your Mobile">
-      <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-      <input class="btn btn-success btn-block" type="submit" value="Send Message">
+    <form class="contact-form">
+      <input class="form-control" type="text" name="username" placeholder="Your Name"> <i class="fa fa-user fa-fw"></i>
+      <input class="form-control" type="email" name="email" placeholder="Your E-Mail"> <i class="fa-solid fa-envelope fa-fw"></i>
+      <input class="form-control" type="number" name="mobile" placeholder="Your Mobile"> <i class="fa-sharp fa-solid fa-phone fa-fw"></i>
+      <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Message"></textarea> 
+      <input class="btn btn-success btn-block" type="submit" value="Send Message"><i class="fa-solid fa-paper-plane fa-fw send-icon"></i>
     </form>
   </div>
   <!-- End Form -->

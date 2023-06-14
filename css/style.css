@@ -24,7 +24,7 @@ h1 {
   height: 0;
   float: left;
   position: relative;
-  top: -32px;
+  top: -40px;
   left: 10px;
   color: #999;
 }
@@ -33,7 +33,7 @@ h1 {
   color: #fff;
   display: block;
   position: relative;
-  top: -30px;
+  top: -35px;
   left: 5px;
 }
 /* End Form */

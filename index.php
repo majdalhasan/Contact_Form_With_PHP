@@ -12,11 +12,11 @@
     $formErrors = array();
 
     if (strlen($user) <= 3 ) {
-      $formErrors[] = 'Username Must Be Larger Than 3 Characters';
+      $formErrors[] = 'Username Must Be Larger Than <strong>3</strong> Characters';
     }
 
     if (strlen($msg) < 10 ) {
-      $formErrors[] = 'Message Can\'t Be Less Than 10 Characters';
+      $formErrors[] = 'Message Can\'t Be Less Than <strong>10</strong> Characters';
     }
 
   }
@@ -42,16 +42,19 @@
   <!-- Start Form -->
   <div class="container">
     <h1 class="text-center">Contact Me</h1>
-    <div class="errors">
+    <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
       <?php
-      if(isset($formErrors)) {
+      if(isset($formErrors)) { ?>
+          <div class="alert alert-danger" role="alert">
+      <?php
         foreach ($formErrors as $error) {
           echo $error . '<br/>';
         }
-      }
-      ?>
+        ?>
     </div>
-    <form class="contact-form" action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
+      <?php }
+      ?>
+    
       <input class="form-control" type="text" name="username" placeholder="Your Name"> <i class="fa fa-user fa-fw"></i>
       <input class="form-control" type="email" name="email" placeholder="Your E-Mail"> <i class="fa-solid fa-envelope fa-fw"></i>
       <input class="form-control" type="number" name="mobile" placeholder="Your Mobile"> <i class="fa-sharp fa-solid fa-phone fa-fw"></i>
